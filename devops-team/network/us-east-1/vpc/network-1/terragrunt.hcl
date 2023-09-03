@@ -26,7 +26,7 @@ inputs = {
   enable_dns_support   = true
 
   enable_nat_gateway = true
-  single_nat_gateway  = true
+  single_nat_gateway = true
 
   tags = local.tags
 }
