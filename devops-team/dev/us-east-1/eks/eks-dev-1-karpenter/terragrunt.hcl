@@ -25,6 +25,7 @@ inputs = {
 
   iam_role_name            = local.name
   iam_role_use_name_prefix = false
+  irsa_use_name_prefix     = false
   cluster_name             = dependency.eks-dev-1.outputs.cluster_name
   irsa_oidc_provider_arn   = dependency.eks-dev-1.outputs.oidc_provider_arn
 
