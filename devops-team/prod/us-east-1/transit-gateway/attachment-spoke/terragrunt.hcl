@@ -36,12 +36,12 @@ inputs = {
 
   ram_resource_share_arn = dependency.attachment-hub.outputs.ram_resource_share_id
 
-  enable_auto_accept_shared_attachments  = true
+  enable_auto_accept_shared_attachments = true
 
   vpc_attachments = {
     vpc_prod = {
 
-      tgw_id       = dependency.attachment-hub.outputs.ec2_transit_gateway_id
+      tgw_id = dependency.attachment-hub.outputs.ec2_transit_gateway_id
 
       vpc_id       = dependency.vpc_prod.outputs.vpc_id
       subnet_ids   = dependency.vpc_prod.outputs.private_subnet_ids_one_per_az

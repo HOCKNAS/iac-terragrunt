@@ -46,7 +46,7 @@ inputs = {
 
       tgw_routes = [
         {
-          destination_cidr_block = "30.0.0.0/16"
+          destination_cidr_block = "0.0.0.0/0"
         }
       ]
     }
