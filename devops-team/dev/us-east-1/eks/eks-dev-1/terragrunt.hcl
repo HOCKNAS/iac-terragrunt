@@ -81,7 +81,7 @@ inputs = {
   aws_auth_roles = [
     # We need to add in the Karpenter node IAM role for nodes launched by Karpenter
     {
-      rolearn  = "arn:aws:iam::${local.account_id}:role/${local.name}-karpenter"
+      rolearn  = "arn:aws:iam::${local.account_id}:instance-profile/${local.name}-karpenter"
       username = "system:node:{{EC2PrivateDNSName}}"
       groups = [
         "system:bootstrappers",
